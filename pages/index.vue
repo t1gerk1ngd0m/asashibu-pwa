@@ -9,71 +9,210 @@
       sm8
       md6
     >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
+      <v-card
+        light
+        class="mt-3"
+      >
+        <v-container class="pa-0">
+          <v-layout
+            wrap
           >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
+            <v-flex xs6 sm6 md6>
+              <v-img
+                src="https://www.ozmall.co.jp/Content/upload/images/294d6dab5a0847cbb367105b81dbf3eb.jpg"
+                height="100%"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6 sm6 md6
+              class="pa-1"
+            >
+              <v-card-title class="pa-0">
+                KOE 渋谷
+              </v-card-title>
+              <v-card-text class="pa-0">
+                <v-layout wrap>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>最寄駅</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>渋谷駅</v-flex>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>開店時間</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>AM 7:30</v-flex>
+                  <v-flex xs12 sm12 md12>
+                    <v-chip color="#F0F4C3" x-small>タグ</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+      <v-card
+        light
+        class="mt-3"
+      >
+        <v-container class="pa-0">
+          <v-layout
+            wrap
           >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
+            <v-flex xs6 sm6 md6>
+              <v-img
+                src="https://www.ozmall.co.jp/Content/upload/images/294d6dab5a0847cbb367105b81dbf3eb.jpg"
+                height="100%"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6 sm6 md6
+              class="pa-1"
+            >
+              <v-card-title class="pa-0">
+                KOE 渋谷
+              </v-card-title>
+              <v-card-text class="pa-0">
+                <v-layout wrap>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>最寄駅</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>渋谷駅</v-flex>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>開店時間</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>AM 7:30</v-flex>
+                  <v-flex xs12 sm12 md12>
+                    <v-chip color="#F0F4C3" x-small>タグ</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+      <v-card
+        light
+        class="mt-3"
+      >
+        <v-container class="pa-0">
+          <v-layout
+            wrap
           >
-            Continue
-          </v-btn>
-        </v-card-actions>
+            <v-flex xs6 sm6 md6>
+              <v-img
+                src="https://www.ozmall.co.jp/Content/upload/images/294d6dab5a0847cbb367105b81dbf3eb.jpg"
+                height="100%"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6 sm6 md6
+              class="pa-1"
+            >
+              <v-card-title class="pa-0">
+                KOE 渋谷
+              </v-card-title>
+              <v-card-text class="pa-0">
+                <v-layout wrap>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>最寄駅</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>渋谷駅</v-flex>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>開店時間</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>AM 7:30</v-flex>
+                  <v-flex xs12 sm12 md12>
+                    <v-chip color="#F0F4C3" x-small>タグ</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+      <v-card
+        light
+        class="mt-3"
+      >
+        <v-container class="pa-0">
+          <v-layout
+            wrap
+          >
+            <v-flex xs6 sm6 md6>
+              <v-img
+                src="https://www.ozmall.co.jp/Content/upload/images/294d6dab5a0847cbb367105b81dbf3eb.jpg"
+                height="100%"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6 sm6 md6
+              class="pa-1"
+            >
+              <v-card-title class="pa-0">
+                KOE 渋谷
+              </v-card-title>
+              <v-card-text class="pa-0">
+                <v-layout wrap>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>最寄駅</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>渋谷駅</v-flex>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>開店時間</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>AM 7:30</v-flex>
+                  <v-flex xs12 sm12 md12>
+                    <v-chip color="#F0F4C3" x-small>タグ</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+      <v-card
+        light
+        class="mt-3"
+      >
+        <v-container class="pa-0">
+          <v-layout
+            wrap
+          >
+            <v-flex xs6 sm6 md6>
+              <v-img
+                src="https://www.ozmall.co.jp/Content/upload/images/294d6dab5a0847cbb367105b81dbf3eb.jpg"
+                height="100%"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6 sm6 md6
+              class="pa-1"
+            >
+              <v-card-title class="pa-0">
+                KOE 渋谷
+              </v-card-title>
+              <v-card-text class="pa-0">
+                <v-layout wrap>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>最寄駅</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>渋谷駅</v-flex>
+                  <v-flex xs5 sm5 md5>
+                    <v-chip color="#E3F2FD" x-small>開店時間</v-chip>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6>AM 7:30</v-flex>
+                  <v-flex xs12 sm12 md12>
+                    <v-chip color="#F0F4C3" x-small>タグ</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                    <v-chip color="#F0F4C3" x-small>駅近い</v-chip>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-card>
     </v-flex>
   </v-layout>
