@@ -1,4 +1,4 @@
-# nuxt-todo-app
+# asashibu-pwa
 
 > My doozie Nuxt.js project
 
