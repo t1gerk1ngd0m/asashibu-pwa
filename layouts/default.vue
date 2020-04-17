@@ -117,10 +117,6 @@ export default {
       rightDrawer: false,
       title: 'Morning Spot'
     }
-  },
-
-  created () {
-    console.log(this.$vuetify)
   }
 }
 </script>
