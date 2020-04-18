@@ -75,6 +75,9 @@ export default {
 
   created () {
     this.fetchRestaurants()
+  },
+
+  mounted () {
     console.log(process.env.API_URL)
   },
 
