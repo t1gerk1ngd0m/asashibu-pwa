@@ -75,6 +75,7 @@ export default {
 
   created () {
     this.fetchRestaurants()
+    console.log(process.env.API_URL)
   },
 
   methods: {
