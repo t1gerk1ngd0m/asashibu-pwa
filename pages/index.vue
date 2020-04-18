@@ -70,21 +70,16 @@ export default {
 
   data: () => ({
     restaurants: [],
-    apiUrl: process.env.API_URL
   }),
 
   created () {
     this.fetchRestaurants()
   },
 
-  mounted () {
-    console.log(process.env.API_URL)
-  },
-
   methods: {
     async fetchRestaurants () {
       try {
-        const res = await this.$axios.get(`${this.apiUrl}/api/v1/restaurants`)
+        const res = await this.$axios.get(`/api/v1/restaurants`)
         this.restaurants = res.data
       } catch(e) {
         console.log(e)
