@@ -68,9 +68,11 @@ export default {
     VuetifyLogo
   },
 
-  data: () => ({
-    restaurants: [],
-  }),
+  computed: {
+    restaurants () {
+      return this.$store.getters.restaurants
+    }
+  },
 
   created () {
     this.fetchRestaurants()
@@ -79,8 +81,7 @@ export default {
   methods: {
     async fetchRestaurants () {
       try {
-        const res = await this.$axios.get(`/api/v1/restaurants`)
-        this.restaurants = res.data
+        this.$store.dispatch('fetchRestaurants')
       } catch(e) {
         console.log(e)
       }
