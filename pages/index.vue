@@ -14,8 +14,8 @@
         class="mt-3"
         v-for="restaurant in restaurants"
         :key="restaurant.id"
-        :href="restaurant.external_link"
-        target="_blank"
+        :to="{ name: 'restaurants-id', params: { id: restaurant.id ,restaurant: restaurant }}"
+        nuxt
       >
         <v-container class="pa-0">
           <v-layout
