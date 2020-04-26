@@ -14,8 +14,8 @@
         class="mt-3"
         v-for="restaurant in restaurants"
         :key="restaurant.id"
-        :href="restaurant.external_link"
-        target="_blank"
+        :to="{ name: 'restaurants-id', params: { id: restaurant.id ,restaurant: restaurant }}"
+        nuxt
       >
         <v-container class="pa-0">
           <v-layout
@@ -68,9 +68,11 @@ export default {
     VuetifyLogo
   },
 
-  data: () => ({
-    restaurants: [],
-  }),
+  computed: {
+    restaurants () {
+      return this.$store.getters.restaurants
+    }
+  },
 
   created () {
     this.fetchRestaurants()
@@ -79,8 +81,7 @@ export default {
   methods: {
     async fetchRestaurants () {
       try {
-        const res = await this.$axios.get(`/api/v1/restaurants`)
-        this.restaurants = res.data
+        this.$store.dispatch('fetchRestaurants')
       } catch(e) {
         console.log(e)
       }
