@@ -105,8 +105,6 @@
 </template>
 
 <script>
-import 'vue2-timepicker/dist/VueTimepicker.css'
-
 export default {
   data: () => ({
     name: '',
