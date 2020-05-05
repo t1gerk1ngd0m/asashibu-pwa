@@ -43,6 +43,7 @@
       <v-btn
         color="#69F0AE"
         :href="restaurant.external_link"
+        target="_blank"
       >最新の情報は食べログへ</v-btn>
     </v-layout>
     <v-layout
