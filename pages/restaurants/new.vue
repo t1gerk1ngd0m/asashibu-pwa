@@ -105,7 +105,6 @@
 </template>
 
 <script>
-import VueTimepicker from 'vue2-timepicker'
 import 'vue2-timepicker/dist/VueTimepicker.css'
 
 export default {
@@ -124,10 +123,6 @@ export default {
     allowedHours: v => v >= 5 && v <=12,
     allowedMinutes: v => v % 15 === 0,
   }),
-
-  components: {
-    VueTimepicker
-  },
 
   watch: {
     image () {
