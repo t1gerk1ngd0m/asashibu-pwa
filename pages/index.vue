@@ -9,6 +9,16 @@
       sm8
       md6
     >
+      <v-btn
+        :to="{ name: 'restaurants-new'}"
+        color="#42A5F5"
+      >お店を新規投稿する</v-btn>
+    </v-flex>
+    <v-flex
+      xs12
+      sm8
+      md6
+    >
       <v-card
         light
         class="mt-3"

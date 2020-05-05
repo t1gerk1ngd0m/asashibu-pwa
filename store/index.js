@@ -28,7 +28,7 @@ export default () => (new Vuex.Store({
     async fetchRestaurants ({ commit }) {
       try {
         let res = await this.$axios.get(`/api/v1/restaurants`)
-        let restaurants = res.data
+        let restaurants = res.data.restaurants
         commit('setRestaurants', restaurants)
       } catch(e) {
         console.log(e)
@@ -37,7 +37,7 @@ export default () => (new Vuex.Store({
     async fetchRestaurant ({ commit }, id) {
       try {
         let res = await this.$axios.get(`/api/v1/restaurants/${id}`)
-        let restaurant = res.data
+        let restaurant = res.data.restaurant
         commit('setRestaurant', restaurant)
       } catch(e) {
         console.log(e)
