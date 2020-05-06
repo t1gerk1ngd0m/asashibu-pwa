@@ -140,7 +140,9 @@ export default {
         formData.append("restaurant[nearest_station]", this.station)
         formData.append("restaurant[image]", this.uploadImage)
         let res = await this.$axios.post(`/api/v1/restaurants`, formData, headers)
-        console.log(res)
+        if (res.status === 200) {
+          window.location = '/'
+        }
       } catch(e) {
         console.log(e)
       }
